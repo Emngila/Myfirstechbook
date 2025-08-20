@@ -1,0 +1,297 @@
+@font-face {
+  font-family: Martian Mono;
+  src: url("./assets/fonts/martian-mono/MartianMono-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+  font-family: inter;
+  src: url("./assets/fonts/inter/static/Inter_18pt-Regular.ttf");
+}
+
+@import "tailwindcss";
+
+@theme {
+  --color-Neutral-900: #062630; /* Neutral 900 */
+  --color-Neutral-700: #385159; /* Neutral 700 */
+  --color-Neutral-200: #e6e1df; /* Neutral 200*/
+  --color-Neutral-100: #faf5f3; /* Neutral 100 */
+  --color-Neutral-0: #ffffff; /* Neutral 0 */
+  --color-Light-Salmon-500: #fea36f; /* Light Salmon 500*/
+  --color-Light-Salmon-100: #ffe2d1; /* Light Salmon 100*/
+  --color-Light-Salmon-50: #fff5ef; /* Light Salmon 50*/
+  --color-peach: #ff9a60;
+  --font-martian-mono: Martian Mono, sans-serif;
+  --font-inter: Inter, sans-serif;
+
+  --breakpoint-*: initial;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+}
+
+@layer utilities {
+  .text-gradient {
+    background-image: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
+    -webkit-background-clip: text;
+    background-clip: text; /* Standard property, for future compatibility */
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+US+Modern&display=swap");
+
+@font-face {
+  font-family: "Playwrite US Modern";
+  src: url("/path/to/playwrite.woff2") format("woff2");
+  font-display: swap;
+}
+
+@theme {
+  /* Fonts */
+  --font-playwrite: playwrite, sans-serif;
+  /* Breakpoints */
+  --breakpoint-*: initial;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 769px;
+  --breakpoint-lg: 976px;
+  --breakpoint-3xl: 120rem;
+  /* Colors */
+
+  --color-peach: rgb(255, 154, 96);
+  --color-peach: #ff9a60;
+  --color-dark-teal: rgb(6, 38, 48);
+  --color-dark-teal: #062630;
+  /* Easing */
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+}
+/* ...............................Text Presets. .............................................*/
+@layer utilities {
+  /* Headings - Bold by default */
+  .text-preset-1 {
+    font-size: 2.375rem;
+    line-height: 1.2;
+    letter-spacing: -0.125rem;
+    font-family: var(--font-martian-mono, "Martian Mono", monospace);
+    font-weight: 700; /* Bold */
+  }
+  @media (min-width: 768px) {
+    .text-preset-1 {
+      font-size: 3.875rem;
+    }
+  }
+
+  .text-preset-2 {
+    font-size: 2.125rem;
+    line-height: 1.3;
+    letter-spacing: -0.125rem;
+    font-family: var(--font-martian-mono, "Martian Mono", monospace);
+    font-weight: 600; /* same as Tailwind font-semibold */
+  }
+  @media (min-width: 768px) {
+    .text-preset-2 {
+      font-size: 3.125rem;
+    }
+  }
+
+  .text-preset-3 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    letter-spacing: -0.0625rem;
+    font-family: var(--font-martian-mono, "Martian Mono", monospace);
+    font-weight: 600; /* same as Tailwind font-semibold */
+  }
+  @media (min-width: 768px) {
+    .text-preset-3 {
+      font-size: 2.125rem;
+      line-height: 1.3;
+    }
+  }
+
+  /* Subheadings / Body - Regular by default */
+  .text-preset-4 {
+    font-size: 1.5rem; /*............24px........*/
+    line-height: 1.1;
+    letter-spacing: -0.0625rem;
+    font-family: var(--font-martian-mono, "Martian Mono", monospace);
+    font-weight: 400; /* Normal */
+  }
+
+  @media (min-width: 768px) {
+    .text-preset-4 {
+      font-size: 2rem; /* Desktop — Semi-bold */
+      font-weight: 600; /* same as Tailwind font-semibold */
+    }
+  }
+
+  .text-preset-5 {
+    font-family: var(--font-inter, "Inter", sans-serif);
+    font-weight: 400; /* regular*/
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  @media (min-width: 768px) {
+    .text-preset-5 {
+      font-size: 1.25rem;
+      font-weight: 400; /* regular */
+    }
+  }
+
+  .text-preset-6 {
+    font-size: 1rem;
+    line-height: 1.3;
+    letter-spacing: -0.0625rem;
+    font-family: var(--font-martian-mono, "Martian Mono", monospace);
+    font-weight: 600; /* same as Tailwind font-semibold */
+  }
+  @media (min-width: 768px) {
+    .text-preset-6 {
+      font-size: 1.125rem;
+    }
+  }
+
+  .text-preset-7 {
+    font-size: 0.875rem;
+    line-height: 1.2;
+    letter-spacing: -0.0625rem;
+    font-family: var(--font-martian-mono, "Martian Mono", monospace);
+    font-weight: 400; /* Normal */
+  }
+}
+
+@layer utilities {
+  .bg-pattern-light {
+    background-image: url("./assets/images/pattern-light-bg.svg");
+    background-color: #faf5f3; /* Fallback */
+    background-size: cover; /* Keep since it works for you */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bg-pattern-dark {
+    background-image: url("./assets/images/Pattern-dark.svg");
+    background-color: #062630; /* Fallback */
+    background-size: auto; /* For repeating patterns */
+    background-repeat: repeat; /* Try for pattern-dark */
+    background-position: center;
+  }
+  .text-gradient {
+    color: #ff9a60;
+    background-image: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient {
+    color: #ff9a60;
+    background-image: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+  }
+
+  @layer utilities {
+    .bg-gradient-peach {
+      background-image: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+    }
+  }
+}
+@layer utilities {
+  .bg-glow {
+    background-image: url("./assets/images/pattern-glow.svg");
+    background-color: #f0f0f0; /* Fallback */
+    background-size: cover; /* Adjust based on image type */
+    background-position: center;
+    background-repeat: no-repeat; /* Glows typically don’t repeat */
+  }
+}
+
+/* Component styles */
+@layer components {
+  .card {
+    padding: 1.5rem; /* p-6 */
+    border-width: 1px; /* border */
+    border-style: solid;
+    border-color: var(--color-Neutral-200, #e6e1df); /* border-Neutral-200 */
+    width: 100%; /* w-full */
+    border-radius: 1rem; /* rounded-2xl */
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    gap: 1.5rem; /* space-y-6 */
+  }
+
+  .button {
+    font-size: 1rem;
+    line-height: 1.3;
+    letter-spacing: -0.0625rem;
+    font-family: var(--font-martian-mono, "Martian Mono", monospace);
+    font-weight: 600;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-Neutral-900, #062630);
+    color: var(--color-Neutral-900, #062630);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-Light-Salmon-50, #fff5ef);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border-radius: 0.5rem;
+  }
+
+  .cardlist {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.75rem; /* Tailwind gap-3 = 0.75rem */
+    color: var(--color-Neutral-700, #385159);
+    font-family: var(--font-inter, "Inter", sans-serif);
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
+@layer components {
+  @media (min-width: 768px) {
+    .btn {
+      border-radius: 0.5rem; /* rounded-lg */
+      border-width: 2px; /* border-2 */
+      border-style: solid;
+      border-color: var(--color-Light-Salmon-50, #fff5ef);
+      background-color: var(--color-Light-Salmon-50, #fff5ef);
+      transition-property: all;
+      transition-duration: 300ms;
+      transition-timing-function: ease-in-out;
+    }
+
+    .btn:hover {
+      background-image: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+    }
+
+    .btn:focus {
+      outline: 2px solid;
+      outline-offset: 2px;
+    }
+  }
+}
+@layer components {
+  @media (min-width: 768px) {
+    .btn2 {
+      border-radius: 0.5rem; /* rounded-lg */
+      border-width: 2px; /* border-2 */
+      border-style: solid;
+      border-color: var(--color-Light-Salmon-50, #fff5ef);
+      background-color: var(--color-Light-Salmon-50, #fff5ef);
+      transition-property: all;
+      transition-duration: 300ms;
+      transition-timing-function: ease-in-out;
+    }
+
+    .btn2:hover {
+      background-image: linear-gradient(90deg, #385159 0%, #062630 100%);
+    }
+
+    .btn2:focus {
+      outline: 2px solid;
+      outline-offset: 2px;
+    }
+  }
+}

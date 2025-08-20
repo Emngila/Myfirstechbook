@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html class="h-full min-w-[375px]" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Frontend Mentor | Tech book club</title>
+  </head>
+  <body class="h-full min-w-80">
+    <!-- ...............................main section ............................-->
+    <main>
+      <!-- hero -->
+      <section
+        class="wrapper relative bg-Neutral-100 bg-pattern-light overflow-hidden h-full w-full pb-12 md:pb-0"
+      >
+        <!-- ...........................glow image.............................. -->
+        <div class="z-[0] absolute bottom-[-500px] right-[-680px]">
+          <img
+            class=""
+            src="./assets/images/pattern-glow.svg"
+            alt="pattern-glow"
+          />
+        </div>
+        <!-- ..................................................................... -->
+        <header>
+          <img
+            class="py-[32px] md:py-[32px] ml-[34px] md:ml-[135px] min-w-[189px] md:min-w-[192px]"
+            src="./assets/images/logo.svg"
+            alt="logo"
+          />
+        </header>
+        <!-- ......................................H1 and image wrapper................. -->
+        <div
+          class="wrapper px-2 min-[1025]-px-32 grid grid-cols-1 min-[1024px]:mb-20 md:mx-8 gap-4 min-[1025px]:grid-cols-2 min-[1025px]:mx-[8.4375rem]"
+        >
+          <div class="flex flex-col space-y-6">
+            <h1 class="text-gradient text-balance text-preset-1 mt-12 md:mt-24">
+              Join the ultimate tech book club
+            </h1>
+            <p class="text-preset-5 text-Neutral-700">
+              Turn your reading time into learning time with fellow tech
+              enthusiasts. Get curated recommendations, join vibrant
+              discussions, and level up your skills one chapter at a time.
+            </p>
+            <a
+              class="btn flex justify-center items-center gap-4 text-preset-6 text-Neutral-900 border-2 border-Neutral-900 min-w-[343px] h-[64px] min-[1025px]:w-[380px] md:max-w-[343px]"
+              href="#"
+              >REVIEW MEMBERSHIP OPTIONS
+              <img src="./assets/images/icon-arrow-down.svg" alt="button"
+            /></a>
+            <!-- .....................profile ........................................-->
+
+            <div class="wrapper flex space-x-2 mb-20 md:mb-24">
+              <div class="flex">
+                <div
+                  class="overflow-hidden h-[40px] w-[40px] ml-[-3px] border-2 border-Neutral-0 rounded-full bg-Neutral-700"
+                >
+                  <img src="./assets/images/dev-1.jpg" alt="dev-1 image" />
+                </div>
+                <div
+                  class="overflow-hidden h-[40px] w-[40px] ml-[-3px] border-2 border-Neutral-0 rounded-full bg-Neutral-700"
+                >
+                  <img src="./assets/images/dev-2.jpg" alt="dev-2 image" />
+                </div>
+                <div
+                  class="overflow-hidden h-[40px] w-[40px] ml-[-3px] border-2 border-Neutral-0 rounded-full bg-Neutral-700"
+                >
+                  <img src="./assets/images/dev-4.jpg" alt="dev-4 image" />
+                </div>
+              </div>
+              <div class="flex flex-col justify-end">
+                <div class="flex">
+                  <img src="./assets/images/icon-star.svg" alt="Star image" />
+                  <img src="./assets/images/icon-star.svg" alt="Star image" />
+                  <img src="./assets/images/icon-star.svg" alt="Star image" />
+                  <img src="./assets/images/icon-star.svg" alt="Star image" />
+                  <img src="./assets/images/icon-star.svg" alt="Star image" />
+                </div>
+                <p class="text-preset-7 text-Neutral-700 font-normal">
+                  200+ developers joined already
+                </p>
+              </div>
+            </div>
+            <!-- ................................................................................ -->
+          </div>
+          <!-- .................................Hero image........................... -->
+          <div
+            class="z-0 rounded-xl overflow-hidden w-full h-full mt-[-24px] md:mt-10 md:"
+          >
+            <picture class="block">
+              <!-- Desktop image -->
+              <source
+                srcset="./assets/images/image-hero-desktop.webp"
+                media="(min-width: 1024px)"
+              />
+
+              <!-- Tablet image -->
+              <source
+                srcset="./assets/images/image-hero-tablet.webp"
+                media="(min-width: 768px)"
+              />
+
+              <!-- Mobile image (default) -->
+              <img
+                src="./assets/images/image-hero-mobile.webp"
+                alt="Tech community"
+                class="w-full h-auto rounded-2xl"
+              />
+            </picture>
+          </div>
+
+          <!-- ......................................................................   -->
+        </div>
+      </section>
+      <!-- .......................Tech Reads & Community........................ -->
+      <section
+        class="relative mt-12 min-[1025]-px-32 grid grid-cols-1 gap-4 min-[1025px]:grid-cols-2 md:mx-8 min-[1025px]:mx-[8.4375rem]"
+      >
+        <!-- ................................list................................. -->
+        <div
+          class="order-1 md:order-2 flex flex-col md:mx-2 md:pt-11 min-[1024px]:px-[3rem]"
+        >
+          <h2 class="text-preset-2 text-Neutral-900 mb-[1.5rem]">
+            Read together, <br />
+            grow together
+          </h2>
+
+          <ul class="flex flex-col justify-start space-y-4">
+            <li
+              class="flex justify-start items-center gap-3 text-Neutral-700 text-preset-5"
+            >
+              <span
+                ><img
+                  class="w-[28px] h-[28px]"
+                  src="./assets/images/icon-check.svg"
+                  alt="" /></span
+              >Monthly curated tech reads <br />
+              selected by industry experts
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 text-Neutral-700 text-preset-5"
+            >
+              <span
+                ><img
+                  class="w-[28px] h-[28px]"
+                  src="./assets/images/icon-check.svg"
+                  alt="" /></span
+              >Virtual and in-person meetups <br />
+              for deep-dive discussions
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 text-Neutral-700 text-preset-5"
+            >
+              <span
+                ><img
+                  class="w-[28px] h-[28px]"
+                  src="./assets/images/icon-check.svg"
+                  alt="" /></span
+              >Early access to new tech book <br />
+              releases
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 text-Neutral-700 text-preset-5"
+            >
+              <span
+                ><img
+                  class="w-[28px] h-[28px]"
+                  src="./assets/images/icon-check.svg"
+                  alt="" /></span
+              >Author Q&A sessions with tech <br />
+              thought leaders
+            </li>
+          </ul>
+        </div>
+        <!-- .......................................end of list................................. -->
+        <!--......................... Tech community image 1 ............................. -->
+        <div class="order-2 md:order-1 overflow-hidden px-4 mt-10">
+          <picture class="block">
+            <!-- Desktop image -->
+            <source
+              srcset="./assets/images/image-read-together-desktop.webp"
+              media="(min-width: 1024px)"
+            />
+
+            <!-- Tablet image -->
+            <source
+              srcset="./assets/images/image-read-together-tablet.webp"
+              media="(min-width: 768px)"
+            />
+
+            <!-- Mobile image (default) -->
+            <img
+              src="./assets/images/image-read-together-mobile.webp"
+              alt="Tech community"
+              class="w-full h-auto rounded-2xl"
+            />
+          </picture>
+        </div>
+        <!-- ......................End of image 1 tech community...............................................      -->
+        <div
+          class="order-3 flex flex-col space-y-6 md:order-3 px-4 mt-16 md:pt-20"
+        >
+          <h2 class="inline-block text-preset-2 text-Neutral-900">
+            Not your average book
+            <span class="relative"
+              >club
+              <img
+                src="./assets/images/circle.svg"
+                alt=""
+                class="w-[168.53px] md:w-[160.53px] h-[160.62px] md:h-[170.62px] absolute top-[-60px] md:top-[-50px] left-[-14px] md:left-[-10px] rotate-[-0deg] pointer-events-none"
+              />
+            </span>
+          </h2>
+          <p
+            class="text-balance text-Neutral-700 text-preset-5 md:desktop-three-lines"
+          >
+            Connect with a community that speaks your language - from
+            <b>Python</b> to <b>TypeScript</b> and everything in between. Our
+            discussions blend technical depth with practical applications.
+          </p>
+        </div>
+        <!--......................... Tech community image 2 ............................. -->
+        <div class="relative order-4 w-full h-full md:order-4 px-4 mt-10">
+          <picture class="block">
+            <!-- Desktop image -->
+            <source
+              srcset="./assets/images/image-not-average-desktop.webp"
+              media="(min-width: 1024px)"
+            />
+
+            <!-- Tablet image -->
+            <source
+              srcset="./assets/images/image-not-average-tablet.webp"
+              media="(min-width: 768px)"
+            />
+
+            <!-- Mobile image (default) -->
+            <img
+              src="./assets/images/image-not-average-mobile.webp"
+              alt="Tech community"
+              class="w-full h-auto rounded-2xl"
+            />
+          </picture>
+          <!-- Image for md screens -->
+          <img
+            src="./assets/images/logos-tech-desktop.svg"
+            class="absolute hidden min-[1440px]:block min-[1440px]:bottom-16 min-[1440px]:left-[-64px]"
+            alt="Technology logos"
+          />
+        </div>
+
+        <!-- ......................End of image 2 tech community...............................................      -->
+
+        <img
+          src="./assets/images/logos-tech-tablet.svg"
+          class="absolute min-[1440px]:hidden hidden min-[768px]:block z-10 min-[768px]:bottom-14 min-[768px]:right-[42px]"
+          alt="Technology logos"
+        />
+      </section>
+
+      <!-- ..................................................................................... -->
+      <!-- .......................Membership section................ -->
+
+      <div
+        class="bg-pattern-light mt-16 md:mt-30 rounded-xl space-y-8 md:space-y-16 py-8 grid grid-cols-1 min-[1024px]:grid-cols-1 overflow-hidden mx-4 md:pt-24 md:mx-[8.4375rem] gap-4"
+      >
+        <!-- Row 1 -->
+        <div
+          class="flex justify-center items-center text-balance col-span-full"
+        >
+          <h2 class="text-preset-2 text-Neutral-900 md:text-center text-start">
+            Your tech <br />
+            reading journey
+          </h2>
+        </div>
+
+        <!-- Row 2 -->
+        <div
+          class="flex flex-col min-[1025px]:flex-row min-[1025px]:gap-x-0 min-[1025px]:justify-center gap-y-8 mx-8 min-[1025px]:mb-[4.375rem] min-[1025px]:ml-[3rem]"
+        >
+          <div class="relative space-y-6">
+            <img
+              class="hidden min-[1025px]:block ``absolute right-[30%]"
+              src="./assets/images/pattern-arrow.svg"
+              alt=""
+            />
+            <p
+              class="border-2 text-preset-6 rounded-sm text-Neutral-900 flex justify-center items-center h-8 w-8"
+            >
+              1
+            </p>
+            <p class="text-preset-6 text-balance text-Neutral-900">
+              Choose your membership tier
+            </p>
+          </div>
+
+          <div class="relative space-y-6">
+            <img
+              class="hidden min-[1025px]:block absolute right-[30%]"
+              src="./assets/images/pattern-arrow.svg"
+              alt=""
+            />
+            <p
+              class="border-2 text-preset-6 rounded-sm text-Neutral-900 flex justify-center items-center h-8 w-8"
+            >
+              2
+            </p>
+            <p class="text-preset-6 text-balance text-Neutral-900">
+              Get your monthly book selection
+            </p>
+          </div>
+
+          <div class="relative space-y-6">
+            <img
+              class="hidden min-[1025px]:block absolute right-[30%]"
+              src="./assets/images/pattern-arrow.svg"
+              alt=""
+            />
+            <p
+              class="border-2 text-preset-6 rounded-sm text-Neutral-900 flex justify-center items-center h-8 w-8"
+            >
+              3
+            </p>
+            <p class="text-preset-6 text-Neutral-900">
+              Join our discussion forums
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            <p
+              class="border-2 text-preset-6 rounded-sm text-Neutral-900 flex justify-center items-center h-8 w-8"
+            >
+              4
+            </p>
+            <p class="text-preset-6 text-Neutral-900">
+              Attend exclusive meetups
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- .................... Membership Options.............................. -->
+      <section class="mx-8 min-[1025px]:mx-[8.4375rem]">
+        <div class="grid place-items-center">
+          <p class="text-preset-2 text-Neutral-900">
+            Membership <br />
+            options
+          </p>
+        </div>
+        <div class="border-Neutral-200">
+          <!-- card 1 -->
+          <div
+            class="grid place-items-center gap-y-8 my-8 grid-cols-[auto] grid-rows-[auto_auto_auto] md:grid-rows-1 md:grid-cols-2 min-[1025px]:grid-cols-[auto_auto_auto]"
+          >
+            <div class="card w-[343px] md:max-w-[328px]">
+              <h3 class="text-preset-4 text-Neutral-900">Starter</h3>
+              <span class="text-preset-3 text-Neutral-900">&dollar;19</span
+              ><span class="text-preset-5 text-Neutral-700">/month</span>
+              <hr class="border-t border-gray-300" />
+
+              <ul class="flex flex-col space-y-4">
+                <li class="cardlist">
+                  <span
+                    ><img
+                      class="w-[24px] h-[24px]"
+                      src="./assets/images/icon-check.svg"
+                      alt="" /></span
+                  >1 book/month
+                </li>
+                <li
+                  class="flex justify-start items-center gap-3 text-Neutral-700 text-preset-5"
+                >
+                  <span
+                    ><img
+                      class="w-[24px] h-[24px]"
+                      src="./assets/images/icon-check.svg"
+                      alt="" /></span
+                  >Online forums
+                </li>
+                <a
+                  class="button btn flex justify-center items-center gap-4 text-preset-6 text-Neutral-900 border-2 border-Neutral-900"
+                  href="#"
+                  >SUBSCRIBE NOW</a
+                >
+              </ul>
+            </div>
+
+            <!-- card 2 -->
+            <div
+              class="card w-[343px] md:max-w-[350px] min-[1025px]:w-[350px] min-[1025px]:py-12 relative overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 rounded-2xl bg-glow -z-10 bottom-[-400px] right-[-400px]"
+              ></div>
+              <h3 class="text-preset-4 text-Neutral-900">Pro</h3>
+              <span class="text-preset-3 text-Neutral-900">&dollar;29</span
+              ><span class="text-preset-5 text-Neutral-700">/month</span>
+              <hr class="border-t border-gray-300" />
+
+              <ul class="flex flex-col space-y-4">
+                <li class="cardlist">
+                  <span
+                    ><img
+                      class="w-[24px] h-[24px]"
+                      src="./assets/images/icon-check.svg"
+                      alt="" /></span
+                  >2 books/month
+                </li>
+                <li
+                  class="flex justify-start items-center gap-3 text-Neutral-700 text-preset-5"
+                >
+                  <span
+                    ><img
+                      class="w-[24px] h-[24px]"
+                      src="./assets/images/icon-check.svg"
+                      alt="" /></span
+                  >Virtual meetups
+                </li>
+                <a
+                  class="button btn flex justify-center items-center gap-4 text-preset-6 text-Neutral-900 border-2 border-Neutral-900"
+                  href="#"
+                  >SUBSCRIBE NOW</a
+                >
+              </ul>
+            </div>
+            <!-- card3 -->
+            <div class="card w-[343px] md:max-w-[328px] min-[1025px]:w-[328px]">
+              <h3 class="text-preset-4 text-Neutral-900">Enterprise</h3>
+              <span class="text-preset-3 text-Neutral-900">Custom</span>
+              <span class="text-preset-5 text-Neutral-700">/month</span>
+              <hr class="border-t border-gray-300" />
+
+              <ul class="flex flex-col space-y-4">
+                <li class="cardlist">
+                  <span
+                    ><img
+                      class="w-[24px] h-[24px]"
+                      src="./assets/images/icon-check.svg"
+                      alt="" /></span
+                  >1 book/month
+                </li>
+                <li
+                  class="flex justify-start items-center gap-3 text-Neutral-700 text-preset-5"
+                >
+                  <span
+                    ><img
+                      class="w-[24px] h-[24px]"
+                      src="./assets/images/icon-check.svg"
+                      alt="" /></span
+                  >Online forums
+                </li>
+                <a
+                  class="button btn flex justify-center items-center gap-4 text-preset-6 text-Neutral-900 border-2 border-Neutral-900"
+                  href="#"
+                  >TALK TO US</a
+                >
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--............................................ testimonial.............................. -->
+      <section
+        class="grid grid-cols-[auto] space-y-8 md:space-y-8 mx-4 md:mx-[135px] px-4 md:px-[50px]"
+      >
+        <!-- star -->
+        <div class="flex flex-row justify-start min-[1025px]:justify-center items-center">
+          <span
+            ><img
+              class="w-[28px] h-[28px]"
+              src="./assets/images/icon-star.svg"
+              alt="Star"
+          /></span>
+          <span
+            ><img
+              class="w-[28px] h-[28px]"
+              src="./assets/images/icon-star.svg"
+              alt="Star"
+          /></span>
+          <span
+            ><img
+              class="w-[28px] h-[28px]"
+              src="./assets/images/icon-star.svg"
+              alt="Star"
+          /></span>
+          <span
+            ><img
+              class="w-[28px] h-[28px]"
+              src="./assets/images/icon-star.svg"
+              alt="Star"
+          /></span>
+          <span
+            ><img
+              class="w-[28px] h-[28px]"
+              src="./assets/images/icon-star.svg"
+              alt="Star"
+          /></span>
+        </div>
+        <div class="md:grid place-items-center">
+          <!-- testimonial -->
+          <p class="text-preset-3 text-Neutral-900 md:text-center text-start">
+            "This book club transformed my technical <br />
+            reading from a solitary activity into an <br />
+            enriching community experience. The <br />
+            discussions are gold!"
+          </p>
+        </div>
+        <div class="md:grid place-items-center">
+          <p class="text-preset-5 text-Neutral-700">
+            Sarah Chen, Software Architect
+          </p>
+        </div>
+      </section>
+      <!-- ...............................................Footer.................................. -->
+      <footer class="bg-pattern-dark rounded-t-2xl mt-16 min-[1025px]:mt-0">
+        <div
+          class="flex flex-col justify-center items-center space-y-6 mx-8 min-[1025px]:mx-[135px] text-Neutral-100"
+        >
+          <h2 class="text-center text-balance text-preset-2 mt-12 md:mt-24">
+            Ready to debug your <br />
+            reading list?
+          </h2>
+
+          <a
+            class="flex justify-center items-center gap-4 btn2 text-preset-6 text-Neutral-0 border-2 border-Neutral-0 min-w-[343px] h-[64px] md:w-[380px] md:max-w-[343px] rounded-lg bg-Neutral-900"
+            href="#"
+            >REVIEW MEMBERSHIP OPTIONS
+            <img src="./assets/images/icon-arrow-up.svg" alt="button"
+          /></a>
+          <!-- .....................profile ........................................-->
+
+          <div
+            class="wrapper flex flex-row justify-between items-center min-[1025px]:space-x-2 mb-20 md:mb-24"
+          >
+            <div class="flex">
+              <div
+                class="overflow-hidden h-[40px] w-[40px] ml-[-3px] border-2 border-Neutral-0 rounded-full bg-Neutral-700"
+              >
+                <img src="./assets/images/dev-1.jpg" alt="dev-1 image" />
+              </div>
+              <div
+                class="overflow-hidden h-[40px] w-[40px] ml-[-3px] border-2 border-Neutral-0 rounded-full bg-Neutral-700"
+              >
+                <img src="./assets/images/dev-2.jpg" alt="dev-2 image" />
+              </div>
+              <div
+                class="overflow-hidden h-[40px] w-[40px] ml-[-3px] border-2 border-Neutral-0 rounded-full bg-Neutral-700"
+              >
+                <img src="./assets/images/dev-4.jpg" alt="dev-4 image" />
+              </div>
+            </div>
+            <div class="min-[1025px]:flex flex-col space-y-2 justify-end">
+              <div class="flex">
+                <img
+                  class="w-[28px] h-[28px]"
+                  src="./assets/images/icon-star.svg"
+                  alt="Star image"
+                />
+                <img
+                  class="w-[28px] h-[28px]"
+                  src="./assets/images/icon-star.svg"
+                  alt="Star image"
+                />
+                <img
+                  class="w-[28px] h-[28px]"
+                  src="./assets/images/icon-star.svg"
+                  alt="Star image"
+                />
+                <img
+                  class="w-[28px] h-[28px]"
+                  src="./assets/images/icon-star.svg"
+                  alt="Star image"
+                />
+                <img
+                  class="w-[28px] h-[28px]"
+                  src="./assets/images/icon-star.svg"
+                  alt="Star image"
+                />
+              </div>
+              <p class="text-preset-7 text-Neutral-0">
+                200+ developers joined already
+              </p>
+            </div>
+            <!-- footer last line -->
+          </div>
+          <!-- ................................................................................ -->
+        </div>
+
+        <div
+          class="flex flex-col justify-center items-center space-y-4 min-[1025px]:flex-row min-[1o25px]:justify-between h-[70px] border-t-1 border-Neutral-700 mx-8 min-[1025px]:mx-[135px]"
+        >
+          <span
+            ><p class="text-preset-7 text-Neutral-0">
+              © 2024 – Tech Book Club
+            </p></span
+          >
+          <div class="flex justify-between space-x-6 items-center">
+            <img
+              class="w-[22px h-[22px]"
+              src="./assets/images/logo-bluesky.svg"
+              alt=""
+            />
+            <img
+              class="w-[18px h-[22px]"
+              src="./assets/images/logo-linkedin.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
