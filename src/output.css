@@ -980,14 +980,34 @@
       margin-top: calc(var(--spacing) * 30);
     }
   }
+  .min-\[1025px\]\:mb-0 {
+    @media (width >= 1025px) {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .min-\[1025px\]\:mb-4 {
+    @media (width >= 1025px) {
+      margin-bottom: calc(var(--spacing) * 4);
+    }
+  }
   .min-\[1025px\]\:mb-8 {
     @media (width >= 1025px) {
       margin-bottom: calc(var(--spacing) * 8);
     }
   }
+  .min-\[1025px\]\:mb-80 {
+    @media (width >= 1025px) {
+      margin-bottom: calc(var(--spacing) * 80);
+    }
+  }
   .min-\[1025px\]\:mb-\[4\.375rem\] {
     @media (width >= 1025px) {
       margin-bottom: 4.375rem;
+    }
+  }
+  .min-\[1025px\]\:mb-\[120px\] {
+    @media (width >= 1025px) {
+      margin-bottom: 120px;
     }
   }
   .min-\[1025px\]\:ml-\[3rem\] {
