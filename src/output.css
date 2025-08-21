@@ -680,9 +680,19 @@
       margin-inline: 135px;
     }
   }
+  .md\:mt-3 {
+    @media (width >= 769px) {
+      margin-top: calc(var(--spacing) * 3);
+    }
+  }
   .md\:mt-10 {
     @media (width >= 769px) {
       margin-top: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:mt-18 {
+    @media (width >= 769px) {
+      margin-top: calc(var(--spacing) * 18);
     }
   }
   .md\:mt-24 {
@@ -896,6 +906,11 @@
   .min-\[1025px\]\:mt-16 {
     @media (width >= 1025px) {
       margin-top: calc(var(--spacing) * 16);
+    }
+  }
+  .min-\[1025px\]\:mt-18 {
+    @media (width >= 1025px) {
+      margin-top: calc(var(--spacing) * 18);
     }
   }
   .min-\[1025px\]\:mt-30 {
