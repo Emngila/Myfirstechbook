@@ -794,6 +794,11 @@
       scroll-padding-block: calc(var(--spacing) * 32);
     }
   }
+  .md\:scroll-pt-28 {
+    @media (width >= 769px) {
+      scroll-padding-top: calc(var(--spacing) * 28);
+    }
+  }
   .md\:space-y-8 {
     @media (width >= 769px) {
       :where(& > :not(:last-child)) {
@@ -876,6 +881,11 @@
       padding-top: calc(var(--spacing) * 1);
     }
   }
+  .md\:pt-4 {
+    @media (width >= 769px) {
+      padding-top: calc(var(--spacing) * 4);
+    }
+  }
   .md\:pt-11 {
     @media (width >= 769px) {
       padding-top: calc(var(--spacing) * 11);
@@ -904,6 +914,21 @@
   .md\:pt-24 {
     @media (width >= 769px) {
       padding-top: calc(var(--spacing) * 24);
+    }
+  }
+  .md\:pt-28 {
+    @media (width >= 769px) {
+      padding-top: calc(var(--spacing) * 28);
+    }
+  }
+  .md\:pt-30 {
+    @media (width >= 769px) {
+      padding-top: calc(var(--spacing) * 30);
+    }
+  }
+  .md\:pt-40 {
+    @media (width >= 769px) {
+      padding-top: calc(var(--spacing) * 40);
     }
   }
   .md\:pb-0 {
