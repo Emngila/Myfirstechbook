@@ -252,6 +252,9 @@
   .col-span-full {
     grid-column: 1 / -1;
   }
+  .m-6 {
+    margin: calc(var(--spacing) * 6);
+  }
   .m-6\.25 {
     margin: calc(var(--spacing) * 6.25);
   }
@@ -311,6 +314,9 @@
   }
   .inline-block {
     display: inline-block;
+  }
+  .table {
+    display: table;
   }
   .h-8 {
     height: calc(var(--spacing) * 8);
@@ -375,14 +381,23 @@
   .min-w-\[375px\] {
     min-width: 375px;
   }
+  .flex-grow {
+    flex-grow: 1;
+  }
   .grow {
     flex-grow: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .rotate-\[-0deg\] {
     rotate: -0deg;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -490,6 +505,10 @@
     border-top-left-radius: var(--radius-2xl);
     border-top-right-radius: var(--radius-2xl);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -554,6 +573,9 @@
   .text-balance {
     text-wrap: balance;
   }
+  .text-wrap {
+    text-wrap: wrap;
+  }
   .break-normal {
     overflow-wrap: normal;
     word-break: normal;
@@ -572,6 +594,13 @@
   }
   .text-Neutral-900 {
     color: var(--color-Neutral-900);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -787,6 +816,16 @@
   .min-\[1024px\]\:grid-cols-1 {
     @media (width >= 1024px) {
       grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  .min-\[1024px\]\:px-0 {
+    @media (width >= 1024px) {
+      padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .min-\[1024px\]\:px-\[2rem\] {
+    @media (width >= 1024px) {
+      padding-inline: 2rem;
     }
   }
   .min-\[1024px\]\:px-\[3rem\] {
@@ -1365,6 +1404,11 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -1430,6 +1474,7 @@
       --tw-space-x-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
