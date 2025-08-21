@@ -995,9 +995,24 @@
       margin-bottom: calc(var(--spacing) * 8);
     }
   }
+  .min-\[1025px\]\:mb-16 {
+    @media (width >= 1025px) {
+      margin-bottom: calc(var(--spacing) * 16);
+    }
+  }
+  .min-\[1025px\]\:mb-20 {
+    @media (width >= 1025px) {
+      margin-bottom: calc(var(--spacing) * 20);
+    }
+  }
   .min-\[1025px\]\:mb-80 {
     @media (width >= 1025px) {
       margin-bottom: calc(var(--spacing) * 80);
+    }
+  }
+  .min-\[1025px\]\:mb-200 {
+    @media (width >= 1025px) {
+      margin-bottom: calc(var(--spacing) * 200);
     }
   }
   .min-\[1025px\]\:mb-\[4\.375rem\] {
