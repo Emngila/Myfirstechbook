@@ -698,6 +698,11 @@
       margin-bottom: calc(var(--spacing) * 24);
     }
   }
+  .md\:ml-8 {
+    @media (width >= 769px) {
+      margin-left: calc(var(--spacing) * 8);
+    }
+  }
   .md\:ml-\[135px\] {
     @media (width >= 769px) {
       margin-left: 135px;
@@ -748,12 +753,26 @@
       min-width: 192px;
     }
   }
+  .md\:scroll-py-32 {
+    @media (width >= 769px) {
+      scroll-padding-block: calc(var(--spacing) * 32);
+    }
+  }
   .md\:space-y-8 {
     @media (width >= 769px) {
       :where(& > :not(:last-child)) {
         --tw-space-y-reverse: 0;
         margin-block-start: calc(calc(var(--spacing) * 8) * var(--tw-space-y-reverse));
         margin-block-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-y-reverse)));
+      }
+    }
+  }
+  .md\:space-y-12 {
+    @media (width >= 769px) {
+      :where(& > :not(:last-child)) {
+        --tw-space-y-reverse: 0;
+        margin-block-start: calc(calc(var(--spacing) * 12) * var(--tw-space-y-reverse));
+        margin-block-end: calc(calc(var(--spacing) * 12) * calc(1 - var(--tw-space-y-reverse)));
       }
     }
   }
@@ -776,6 +795,21 @@
       padding-inline: 50px;
     }
   }
+  .md\:py-0 {
+    @media (width >= 769px) {
+      padding-block: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:py-2 {
+    @media (width >= 769px) {
+      padding-block: calc(var(--spacing) * 2);
+    }
+  }
+  .md\:py-4 {
+    @media (width >= 769px) {
+      padding-block: calc(var(--spacing) * 4);
+    }
+  }
   .md\:py-5 {
     @media (width >= 769px) {
       padding-block: calc(var(--spacing) * 5);
@@ -786,14 +820,44 @@
       padding-block: calc(var(--spacing) * 16);
     }
   }
+  .md\:py-32 {
+    @media (width >= 769px) {
+      padding-block: calc(var(--spacing) * 32);
+    }
+  }
   .md\:py-\[32px\] {
     @media (width >= 769px) {
       padding-block: 32px;
     }
   }
+  .md\:pt-0 {
+    @media (width >= 769px) {
+      padding-top: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:pt-1 {
+    @media (width >= 769px) {
+      padding-top: calc(var(--spacing) * 1);
+    }
+  }
   .md\:pt-11 {
     @media (width >= 769px) {
       padding-top: calc(var(--spacing) * 11);
+    }
+  }
+  .md\:pt-12 {
+    @media (width >= 769px) {
+      padding-top: calc(var(--spacing) * 12);
+    }
+  }
+  .md\:pt-16 {
+    @media (width >= 769px) {
+      padding-top: calc(var(--spacing) * 16);
+    }
+  }
+  .md\:pt-18 {
+    @media (width >= 769px) {
+      padding-top: calc(var(--spacing) * 18);
     }
   }
   .md\:pt-20 {
