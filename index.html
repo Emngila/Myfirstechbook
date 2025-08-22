@@ -54,6 +54,7 @@
             <a
               class="btn flex justify-center rounded-xl items-center gap-4 text-preset-6 text-Neutral-900 border-2 border-Neutral-900 min-w-[343px] h-[64px] min-[1025px]:w-[380px] md:max-w-[380px] md:px-4 md:py-5"
               href="#"
+              onclick="event.preventDefault(); document.getElementById('membershipOptions').scrollIntoView({ behavior: 'smooth' })"
               >REVIEW MEMBERSHIP OPTIONS
               <img src="./src/assets/images/icon-arrow-down.svg" alt="button"
             /></a>
@@ -140,7 +141,7 @@
       >
         <!-- ................................list................................. -->
         <div
-          class="order-1 md:order-2 flex flex-col px-2 md:px- md:mx-2 md:pt-20 md:ml-8 min-[1024px]:px-0 min-[1025px]:mt"
+          class="order-1 md:order-2 flex flex-col px-2 md:mx-2 md:pt-20 md:ml-12 min-[1024px]:px-0 min-[1025px]:mt-2"
         >
           <h2 class="text-preset-2 text-Neutral-900 mb-[1.5rem]">
             Read together, grow together
@@ -156,7 +157,8 @@
                   src="./src/assets/images/icon-check.svg"
                   alt="" /></span
               >Monthly curated tech reads <br class="min-[1025px]:hidden" />
-              selected by <br class=" hidden min-[1025px]:block" />  industry experts
+              selected by <br class="hidden min-[1025px]:block" />
+              industry experts
             </li>
             <li
               class="flex justify-start items-center gap-3 text-Neutral-700 text-preset-5"
@@ -167,11 +169,9 @@
                   src="./src/assets/images/icon-check.svg"
                   alt="" /></span
               >Virtual and in-person meetups <br class="min-[1025px]:hidden" />
-              for deep- <br class=" hidden min-[1025px]:block" />  dive discussions
+              for deep- <br class="hidden min-[1025px]:block" />
+              dive discussions
             </li>
-
-
-
 
             <li
               class="flex justify-start items-center gap-3 text-Neutral-700 text-preset-5"
@@ -193,7 +193,8 @@
                   src="./src/assets/images/icon-check.svg"
                   alt="" /></span
               >Author Q&A sessions with tech <br class="min-[1025px]:hidden" />
-              thought <br class=" hidden min-[1025px]:block" /> leaders
+              thought <br class="hidden min-[1025px]:block" />
+              leaders
             </li>
           </ul>
         </div>
@@ -301,7 +302,9 @@
         <div
           class="flex justify-center items-center text-balance col-span-full"
         >
-          <h2 class="z-1 text-preset-2 text-Neutral-900 md:text-center text-start">
+          <h2
+            class="z-1 text-preset-2 text-Neutral-900 md:text-center text-start"
+          >
             Your tech <br />
             reading journey
           </h2>
@@ -373,7 +376,10 @@
       </div>
       <!-- !-- ................ Membership Options.......................... -->
       <!-- .................... Membership Options........................... -->
-      <section class="mx-auto min-[1025px]:mx-[120px] mt-8 min-[1025px]:mt-30">
+      <section
+        class="mx-auto min-[1025px]:mx-[120px] mt-8 min-[1025px]:mt-30"
+        id="membershipOptions"
+      >
         <div
           class="grid ml-8 min-[1025px]:place-items-center min-[1025px]:mb-16"
         >
@@ -561,6 +567,7 @@
           <a
             class="flex justify-center items-center gap-4 btn2 text-preset-6 text-Neutral-0 border-2 border-Neutral-0 min-w-[343px] h-[64px] md:w-[380px] md:max-w-[380px] md:px-4 md:py-5 rounded-lg bg-Neutral-900"
             href="#"
+            onclick="event.preventDefault(); document.getElementById('membershipOptions').scrollIntoView({ behavior: 'smooth' })"
             >REVIEW MEMBERSHIP OPTIONS
             <img src="./src/assets/images/icon-arrow-up.svg" alt="button"
           /></a>
