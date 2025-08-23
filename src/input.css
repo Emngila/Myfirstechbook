@@ -250,7 +250,7 @@
 }
 
 @layer components {
-  @media (min-width: 768px) {
+  @media (min-width: 0px) {
     .btn {
       border-radius: 0.5rem; /* rounded-lg */
       border-width: 2px; /* border-2 */
@@ -273,7 +273,7 @@
   }
 }
 @layer components {
-  @media (min-width: 768px) {
+  @media (min-width: 0px) {
     .btn2 {
       border-radius: 0.5rem; /* rounded-lg */
       border-width: 2px; /* border-2 */
