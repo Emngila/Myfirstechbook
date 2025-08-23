@@ -904,6 +904,11 @@
       margin-top: calc(var(--spacing) * 30);
     }
   }
+  .min-\[1025px\]\:mt-36 {
+    @media (width >= 1025px) {
+      margin-top: calc(var(--spacing) * 36);
+    }
+  }
   .min-\[1025px\]\:mt-40 {
     @media (width >= 1025px) {
       margin-top: calc(var(--spacing) * 40);
