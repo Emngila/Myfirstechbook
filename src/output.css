@@ -932,6 +932,11 @@
       margin-bottom: calc(var(--spacing) * 4);
     }
   }
+  .min-\[1025px\]\:mb-6 {
+    @media (width >= 1025px) {
+      margin-bottom: calc(var(--spacing) * 6);
+    }
+  }
   .min-\[1025px\]\:mb-7 {
     @media (width >= 1025px) {
       margin-bottom: calc(var(--spacing) * 7);
