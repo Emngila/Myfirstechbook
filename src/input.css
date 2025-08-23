@@ -194,7 +194,7 @@
 @layer utilities {
   .bg-glow {
     background-image: url("./assets/images/pattern-glow.svg");
-    background-color: #f0f0f0; /* Fallback */
+    background-color: #faf5f3; /* Fallback */
     background-size: cover; /* Adjust based on image type */
     background-position: center;
     background-repeat: no-repeat; /* Glows typically don’t repeat */
