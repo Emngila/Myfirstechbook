@@ -889,6 +889,11 @@
       margin-top: calc(var(--spacing) * 8);
     }
   }
+  .min-\[1025px\]\:mt-12 {
+    @media (width >= 1025px) {
+      margin-top: calc(var(--spacing) * 12);
+    }
+  }
   .min-\[1025px\]\:mt-18 {
     @media (width >= 1025px) {
       margin-top: calc(var(--spacing) * 18);
