@@ -118,7 +118,7 @@
 
   @media (min-width: 768px) {
     .text-preset-4 {
-      font-size: 2rem; /* Desktop — Semi-bold */
+      font-size: 1.5rem; /* Desktop — Semi-bold */
       font-weight: 600; /* same as Tailwind font-semibold */
     }
   }
