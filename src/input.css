@@ -67,7 +67,7 @@
 /* ...............................Text Presets. .............................................*/
 @layer utilities {
   /* Headings - Bold by default */
-  .text-preset-1 {
+  .text-1 {
     font-size: 2.375rem;
     line-height: 1.2;
     letter-spacing: -0.125rem;
@@ -75,12 +75,12 @@
     font-weight: 700; /* Bold */
   }
   @media (min-width: 768px) {
-    .text-preset-1 {
+    .text-1{
       font-size: 3.875rem;
     }
   }
 
-  .text-preset-2 {
+  .text-2 {
     font-size: 2.125rem;
     line-height: 1.3;
     letter-spacing: -0.125rem;
@@ -88,12 +88,12 @@
     font-weight: 600; /* same as Tailwind font-semibold */
   }
   @media (min-width: 768px) {
-    .text-preset-2 {
+    .text-2 {
       font-size: 3.125rem;
     }
   }
 
-  .text-preset-3 {
+  .text-3 {
     font-size: 1.5rem;
     line-height: 1.1;
     letter-spacing: -0.0625rem;
@@ -101,14 +101,14 @@
     font-weight: 600; /* same as Tailwind font-semibold */
   }
   @media (min-width: 768px) {
-    .text-preset-3 {
+    .text-3 {
       font-size: 2.125rem;
       line-height: 1.3;
     }
   }
 
   /* Subheadings / Body - Regular by default */
-  .text-preset-4 {
+  .text-4 {
     font-size: 1.5rem; /*............24px........*/
     line-height: 1.1;
     letter-spacing: -0.0625rem;
@@ -117,26 +117,26 @@
   }
 
   @media (min-width: 768px) {
-    .text-preset-4 {
+    .text-4 {
       font-size: 1.5rem; /* Desktop — Semi-bold */
       font-weight: 600; /* same as Tailwind font-semibold */
     }
   }
 
-  .text-preset-5 {
+  .text-5 {
     font-family: var(--font-inter, "Inter", sans-serif);
     font-weight: 400; /* regular*/
     font-size: 1.25rem;
     line-height: 1.4;
   }
   @media (min-width: 768px) {
-    .text-preset-5 {
+    .text-5 {
       font-size: 1.25rem;
       font-weight: 400; /* regular */
     }
   }
 
-  .text-preset-6 {
+  .text-6 {
     font-size: 1rem;
     line-height: 1.3;
     letter-spacing: -0.0625rem;
@@ -144,12 +144,12 @@
     font-weight: 600; /* same as Tailwind font-semibold */
   }
   @media (min-width: 768px) {
-    .text-preset-6 {
+    .text-6 {
       font-size: 1.125rem;
     }
   }
 
-  .text-preset-7 {
+  .text-7 {
     font-size: 0.875rem;
     line-height: 1.2;
     letter-spacing: -0.0625rem;
